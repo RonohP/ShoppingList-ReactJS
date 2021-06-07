@@ -29,11 +29,11 @@ const List = (props) =>{
     );
 
     const viewTemplate =(
-        <li className ={props.class} id ={props.id} onClick={() => props.toggleClassName(props.id)} > 
+        <div className ={props.class} id ={props.id} onClick={() => props.toggleClassName(props.id)} > 
         {props.text}
         <span className="edit" onClick={()=>setEditing(true)}>{< FontAwesomeIcon icon = {faEdit} />}</span>
         <span className="close" onClick={()=>props.deleteTask(props.id)}>{< FontAwesomeIcon icon = {faTrash} />}</span>
-        </li> 
+        </div> 
     );
     return(
     <li className ="list">
