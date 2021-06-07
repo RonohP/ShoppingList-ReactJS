@@ -13,7 +13,7 @@ function App(props) {
     const updatedTask = tasks.map(task =>{
       if(task.id === id){
         
-        return {...task, class: ""};
+        return {...task, class: "checked"};
       }
         return task;
     });
