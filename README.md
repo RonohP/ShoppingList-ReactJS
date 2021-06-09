@@ -1,7 +1,7 @@
 # ShoppingList-ReactJS
 Women Techsters Week 4 Assignment
 
-Link to hosted project: 
+Link to hosted project: https://relaxed-thompson-b1a316.netlify.app/
 
 # Getting Started with Create React App
 
