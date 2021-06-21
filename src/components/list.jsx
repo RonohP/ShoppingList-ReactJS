@@ -31,8 +31,10 @@ const List = (props) =>{
     const viewTemplate =(
         <div className ={props.class} id ={props.id} onClick={() => props.toggleClassName(props.id)} > 
         {props.text}
-        <span className="edit" onClick={()=>setEditing(true)}>{< FontAwesomeIcon icon = {faEdit} />}</span>
-        <span className="close" onClick={()=>props.deleteTask(props.id)}>{< FontAwesomeIcon icon = {faTrash} />}</span>
+        <div>
+            <span className="edit" onClick={()=>setEditing(true)}>{< FontAwesomeIcon icon = {faEdit} />}</span>
+            <span className="close" onClick={(e)=> { e.stopPropagation(); props.deleteTask(props.id)}}>{< FontAwesomeIcon icon = {faTrash} />}</span>
+        </div>
         </div> 
     );
     return(

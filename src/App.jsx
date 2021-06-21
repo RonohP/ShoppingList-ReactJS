@@ -37,7 +37,16 @@ function App(props) {
   }
 
   const taskList = tasks.map(task => 
-  <List id={task.id} text = {task.text} class={task.class} key={task.id} toggleClassName = {toggleClassName} deleteTask ={deleteTask} editTask={editTask}/>);
+    <List 
+      id={task.id} 
+      text = {task.text} 
+      class={task.class} 
+      key={task.id} 
+      toggleClassName = {toggleClassName} 
+      deleteTask ={deleteTask} 
+      editTask={editTask}
+    />
+  );
 
   const addTask =(text)=>{
     const newTask = {id: "list-"+nanoid(), text: text, class:""};
